@@ -1,8 +1,15 @@
 ## 0. 실행 방법
+### 도커로 실행
 ```bash
 docker-compose build
 docker-compose up
 ```
+### 로컬에서 실행
+```bash
+yarn install
+yarn start:dev
+```
+### 클라이언트
 - localhost:5500/graphql 플레이그라운드 접속 가능
 - client_example.ts 예제 확인
 
