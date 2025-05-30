@@ -1,6 +1,10 @@
+## 0. 실행 방법
 ```bash
-yarn start:dev
+docker-compose build
+docker-compose up
 ```
+- localhost:5500/graphql 플레이그라운드 접속 가능
+- client_example.ts 예제 확인
 
 ## 1. save transaction
 ```ts
