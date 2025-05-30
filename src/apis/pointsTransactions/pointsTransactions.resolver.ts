@@ -9,8 +9,6 @@ export class PointsTransactionsResolver {
     private readonly pointsTransactionsService: PointsTransactionsService,
   ) {}
 
-  //   @Field(() => [String], { nullable: true })
-  //   paths: string[];
   @Query(() => [PointTransaction])
   getPointTransactions(): Promise<PointTransaction[]> {
     return this.pointsTransactionsService.findAll();
