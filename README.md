@@ -3,22 +3,28 @@ yarn start:dev
 ```
 
 ## feat 1 - transaction save
-
-```json
-"delivered_amount":{
-"value":int457893
-"currency":string"XRP"
+```ts
+mutation {
+  createPointTransaction(createPointTransactionInput: {
+    value: String!
+    currency: Int!
+    transactionIndex: Int!
+    transactionResult: String!
+    account: string!
+    destination: String!
+    fee: Int!
+    transactionType: String!
+    path: [String!]
+    hash: String
+  }){
+    // 받고 싶은 필드를 입력하세요. ex) id, value, currency
+  }
 }
-"TransactionIndex":int7
-"TransactionResult":string"tesSUCCESS"
-
-"Account":string"rpTAneq8vdCFo27eETgsKBibccjW9EwY4k"
-"Destination":string"rpTAneq8vdCFo27eETgsKBibccjW9EwY4k"
-"Fee":int10
-
-"TransactionType":string"Payment"
-"hash":string"A4DC5FD8C9DADF3A53874ED1F36028D204B3676253FA40A152501909A73B3DEC"
-"date":string"2025-05-27T13:12:22.000Z"
-
-(optional) “Paths":[]0 items
+```
+```ts
+query {
+  getPointTransactions {
+    // 받고 싶은 필드를 입력하세요. ex) id, value, currency
+  }
+}
 ```
