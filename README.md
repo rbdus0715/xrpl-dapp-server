@@ -6,7 +6,13 @@ docker-compose up
 - localhost:5500/graphql 플레이그라운드 접속 가능
 - client_example.ts 예제 확인
 
-## 1. save transaction
+## 1. API 요청 시 필요한 패키지
+```bash
+# npm이면 npm으로 다운받아주세요.
+yarn add @apollo/client graphql cross-fetch
+```
+
+## 2. save transaction
 ```ts
 mutation {
   createPointTransaction(createPointTransactionInput: {
@@ -25,7 +31,7 @@ mutation {
   }
 }
 ```
-## 2. fetch transaction
+## 3. fetch transaction
 ```ts
 query {
   getPointTransactions {
@@ -33,3 +39,4 @@ query {
   }
 }
 ```
+
