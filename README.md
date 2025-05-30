@@ -20,7 +20,7 @@ yarn add @apollo/client graphql cross-fetch
 - client_example.ts 예제 확인
 
 # 2. API
-### 2. save transaction
+### 1. save transaction
 ```ts
 mutation {
   createPointTransaction(createPointTransactionInput: {
@@ -39,7 +39,7 @@ mutation {
   }
 }
 ```
-### 3. fetch transaction
+### 2. fetch transaction
 ```ts
 query {
   getPointTransactions {
