@@ -2,7 +2,7 @@
 yarn start:dev
 ```
 
-## feat 1 - transaction save
+## 1. save transaction
 ```ts
 mutation {
   createPointTransaction(createPointTransactionInput: {
@@ -21,6 +21,7 @@ mutation {
   }
 }
 ```
+## 2. fetch transaction
 ```ts
 query {
   getPointTransactions {
