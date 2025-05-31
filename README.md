@@ -10,7 +10,7 @@ yarn install
 yarn start:dev
 ```
 # 1. 클라이언트
-## API 요청 시 필요한 패키지
+### API 요청 시 필요한 패키지
 ```bash
 # npm이면 npm으로 다운받아주세요.
 yarn add @apollo/client graphql cross-fetch
