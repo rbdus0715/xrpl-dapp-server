@@ -14,6 +14,13 @@ export class PointsTransactionsResolver {
     return this.pointsTransactionsService.findAll();
   }
 
+  @Query(() => PointTransaction)
+  fetchPointTransactionByAccount(
+    @Args('account') account: string,
+  ): Promise<PointTransaction[]> {
+    return this.pointsTransactionsService.findByAccount({ account });
+  }
+
   @Mutation(() => PointTransaction)
   createPointTransaction(
     @Args('createPointTransactionInput')
