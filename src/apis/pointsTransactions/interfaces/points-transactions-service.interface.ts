@@ -3,3 +3,7 @@ import { CreatePointTransactionInput } from '../dto/create-pointTransaction.inpu
 export interface IPointsTransactionsServiceCreate {
   createPointTransactionInput: CreatePointTransactionInput;
 }
+
+export interface IPointsTransactionsServiceFindByAccount {
+  account: string;
+}
